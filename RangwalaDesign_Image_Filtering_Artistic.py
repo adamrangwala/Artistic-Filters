@@ -22,6 +22,8 @@ example_images = [
     "Samples/Hyundai Lindbergh.JPG",
     "Samples/Islamic Center 2.JPG",
     "Samples/Islamic Center.JPG"
+    "Samples/Katy_Trail_Gang.jpg"
+
     
     # Add more images here
 ]

@@ -19,6 +19,7 @@ st.title("RangwalaDesign's Artistic Image Filters")
 
 # List of example images
 example_images = [
+    "Samples/colorful-design-with-spiral-design.jpg",
     "Samples/Hyundai Lindbergh.JPG",
     "Samples/Islamic Center 2.JPG",
     "Samples/Islamic Center.JPG",

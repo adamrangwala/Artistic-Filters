@@ -15,7 +15,7 @@ def get_image_download_link(img, filename, text):
 
 
 # Set title.
-st.title("Artistic Image Filters")
+st.title("RangwalaDesign's Artistic Image Filters")
 
 # Upload image.
 uploaded_file = st.file_uploader("Choose an image file:", type=["png", "jpg"])

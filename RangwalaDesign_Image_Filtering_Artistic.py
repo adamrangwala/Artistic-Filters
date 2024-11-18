@@ -27,10 +27,10 @@ example_images = [
 ]
 
 # Add a select box for examples
-example_selection = st.selectbox("Choose an example image:", ["None"] + example_images)
+example_selection = st.selectbox("Choose an example image:", ["Upload Image"] + example_images)
 
 # Handling of example selection
-if example_selection != "None":
+if example_selection != "Upload Image":
     # Load the selected example image
     img = cv2.imread(example_selection, cv2.IMREAD_COLOR)
 else:

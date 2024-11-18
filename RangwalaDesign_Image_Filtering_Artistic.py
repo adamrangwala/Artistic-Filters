@@ -44,7 +44,7 @@ else:
         st.text("Please upload an image or select an example.")
         st.stop()
 
-if uploaded_file is not None:
+if img is not None:
     input_col, output_col = st.columns(2)
     with input_col:
         st.header("Original")

@@ -2,7 +2,6 @@ numpy
 streamlit
 opencv-python-headless
 pillow
-io
 base64
 PIL
 filters

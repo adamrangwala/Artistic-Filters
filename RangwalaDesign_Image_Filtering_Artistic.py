@@ -25,7 +25,7 @@ example_images = [
     "Samples/Arch Vertical.jpg",
     "Samples/Arch.jpg",
     "Samples/Man Looking at Arch.jpg",
-    "Samples/Man on Overlook.jpg"
+    "Samples/Man On Overlook.jpg"
 
     
     # Add more images here

@@ -17,13 +17,34 @@ def get_image_download_link(img, filename, text):
 # Set title.
 st.title("RangwalaDesign's Artistic Image Filters")
 
-# Upload image.
-uploaded_file = st.file_uploader("Choose an image file:", type=["png", "jpg"])
+# List of example images
+example_images = [
+    "Samples/Hyundai Lindbergh.JPG",
+    "Samples/Islamic Center 2.JPG",
+    "Samples/Islamic Center.JPG"
+    
+    # Add more images here
+]
+
+# Add a select box for examples
+example_selection = st.selectbox("Choose an example image:", ["None"] + example_images)
+
+# Handling of example selection
+if example_selection != "None":
+    # Load the selected example image
+    img = cv2.imread(example_selection, cv2.IMREAD_COLOR)
+else:
+    # File uploader for user's own image
+    uploaded_file = st.file_uploader("Choose a file", type=["jpg", "jpeg", "png"])
+    if uploaded_file is not None:
+        raw_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
+        img = cv2.imdecode(raw_bytes, cv2.IMREAD_COLOR)
+    else:
+        # If no input provided
+        st.text("Please upload an image or select an example.")
+        st.stop()
 
 if uploaded_file is not None:
-    # Convert the file to an opencv image.
-    raw_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
-    img = cv2.imdecode(raw_bytes, cv2.IMREAD_COLOR)
     input_col, output_col = st.columns(2)
     with input_col:
         st.header("Original")

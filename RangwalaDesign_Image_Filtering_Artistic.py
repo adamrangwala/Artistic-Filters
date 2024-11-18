@@ -22,7 +22,10 @@ example_images = [
     "Samples/Hyundai Lindbergh.JPG",
     "Samples/Islamic Center 2.JPG",
     "Samples/Islamic Center.JPG",
-    "Samples/Katy_Trail_Gang.jpg"
+    "Samples/Arch Vertical.jpg",
+    "Samples/Arch.jpg",
+    "Samples/Man Looking at Arch.jpg",
+    "Samples/Man on Overlook.jpg"
 
     
     # Add more images here

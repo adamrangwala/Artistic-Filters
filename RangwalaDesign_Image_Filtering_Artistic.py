@@ -95,19 +95,19 @@ if img is not None:
     if option == "None":
         # Don't show output image.
         output_flag = 0
-    elif option == "Black and White":
+    if option == "Black and White":
         output = bw_filter(img)
         color = "GRAY"
-    elif option == "Sepia / Vintage":
+    if option == "Sepia / Vintage":
         output = sepia(img)
-    elif option == "Vignette Effect":
+    if option == "Vignette Effect":
         level = st.slider("level", 0, 5, 2)
         output = vignette(img, level)
-    elif option == "Pencil Sketch":
+    if option == "Pencil Sketch":
         ksize = st.slider("Blur kernel size", 1, 11, 5, step=2)
         output = pencil_sketch(img, ksize)
         color = "GRAY"
-    elif option == "Edge Detection":
+    if option == "Edge Detection":
         threshold1 = st.slider("Lower Threshold", 0, 250, 100, step=10)
         threshold2 = st.slider("Higher Threshold", 0, 250, 200, step=10)
         output = edge_detection(img, threshold1, threshold2)

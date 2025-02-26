@@ -15,7 +15,7 @@ def get_image_download_link(img, filename, text):
 
 
 # Set title.
-st.title("RangwalaDesign's Artistic Image Filters")
+st.title("Artistic Image Filters")
 
 # List of example images
 example_images = [
